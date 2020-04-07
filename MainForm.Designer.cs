@@ -70,6 +70,7 @@ namespace MotionDetectorSample
             this.l1 = new System.Windows.Forms.Label();
             this.alarmTimer = new System.Windows.Forms.Timer(this.components);
             this.l2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.menuMenu.SuspendLayout();
             this.statusBar.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -380,7 +381,7 @@ namespace MotionDetectorSample
             // l1
             // 
             this.l1.AutoSize = true;
-            this.l1.Location = new System.Drawing.Point(242, 8);
+            this.l1.Location = new System.Drawing.Point(363, 8);
             this.l1.Name = "l1";
             this.l1.Size = new System.Drawing.Size(13, 13);
             this.l1.TabIndex = 1;
@@ -394,17 +395,27 @@ namespace MotionDetectorSample
             // l2
             // 
             this.l2.AutoSize = true;
-            this.l2.Location = new System.Drawing.Point(290, 8);
+            this.l2.Location = new System.Drawing.Point(448, 9);
             this.l2.Name = "l2";
             this.l2.Size = new System.Drawing.Size(13, 13);
             this.l2.TabIndex = 5;
             this.l2.Text = "0";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(262, 8);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(103, 13);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Количество машин";
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(563, 395);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.l2);
             this.Controls.Add(this.l1);
             this.Controls.Add(this.panel1);
@@ -467,6 +478,7 @@ namespace MotionDetectorSample
         private System.Windows.Forms.Label l1;
         private System.Windows.Forms.ToolStripMenuItem appearanceRegionsToolStripMenuItem;
         private System.Windows.Forms.Label l2;
+        private System.Windows.Forms.Label label1;
     }
 }
 
